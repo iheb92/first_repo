@@ -1,0 +1,41 @@
+VAR
+i ,j ,k ,word ,vowels : INTEGER := 0;
+
+  s:string;
+
+BEGIN
+
+ REPEAT
+     	Write ("enter a string")
+     	Read (s)
+ UNTIL ( Length (s) ? 0)
+ 	Write( s);
+ While (string [i]! = END) DO
+ 	i :=i+1;
+ END_WHILE
+ 	leng:=i;
+ FOR j FROM 1 TO Length (s) STEP 1 DO
+
+	IF (s[j]='' && s[j-1]!=' ') THEN
+
+    word:=word+1;
+
+	END_IF
+
+ END_FOR
+	
+ FOR k FROM 1 TO Length (s) STEP 1 DO
+
+	IF ( (s[c] = 'a' || s[c] = 'A' || s[c] = 'e' || s[c] = 'E' || s[c] = 'i' || s[c] = 'I' || s[c] ='o' || s[c]='O' || s[c] = 'u' || s[c] = 'U')) THEN
+		
+   vowels:=vowels+1;	
+	
+    END_IF
+
+ END_FOR
+
+	Write(leng);
+	Write (word);
+	Write (vowels);
+
+END
